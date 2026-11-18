@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Portafolio Profesional y Logros de Daniel Infantes">
-    <meta name="author" content="Daniel Infantes">
+    <meta name="description" content="Portafolio Profesional de Luis Daniel Laiza Infantes - Estudiante de Ingeniería de Sistemas e Informática">
+    <meta name="author" content="Luis Daniel Laiza Infantes">
 
-    <title>Daniel Infantes | Portafolio &amp; Logros</title>
+    <title>Luis Daniel Laiza Infantes | Portafolio Profesional</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -53,7 +53,7 @@
       .brand-logo {
         font-family: 'Roboto', sans-serif;
         font-weight: 900;
-        font-size: 2.1rem;
+        font-size: 1.9rem;
         color: var(--brand-blue) !important;
         letter-spacing: -1px;
         text-decoration: none !important;
@@ -61,7 +61,7 @@
         line-height: 1;
       }
       .brand-subtitle {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         font-weight: 700;
         color: #4b5563;
         text-transform: uppercase;
@@ -111,11 +111,11 @@
       .hero-portada h1 {
         font-family: 'Merriweather', serif;
         font-weight: 900;
-        font-size: 2.2rem;
+        font-size: 2.1rem;
         margin-bottom: 0.6rem;
       }
       .hero-portada p.lead {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         color: #e5e7eb;
         font-weight: 400;
         margin-bottom: 0;
@@ -148,13 +148,6 @@
         line-height: 1.35;
         margin-bottom: 8px;
       }
-      .card-title-custom a {
-        color: #111827;
-        text-decoration: none;
-      }
-      .card-title-custom a:hover {
-        color: var(--brand-blue);
-      }
       .card-meta {
         font-size: 0.78rem;
         color: #6b7280;
@@ -176,6 +169,17 @@
         margin: 2rem 0 1rem 0;
         padding-top: 10px;
       }
+      .badge-skill {
+        background-color: #e9ecef;
+        color: #495057;
+        font-weight: 600;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        border-radius: 4px;
+        margin-right: 5px;
+        margin-bottom: 6px;
+        display: inline-block;
+      }
       .site-footer {
         background-color: var(--brand-dark);
         color: #9ca3af;
@@ -188,15 +192,15 @@
   </head>
 
   <body>
-    <!-- Barra superior -->
+    <!-- Barra superior institucional -->
     <div class="top-utility-bar">
       <div class="container d-flex justify-content-between align-items-center">
         <div>
           <span class="status-badge mr-2">DISPONIBLE</span>
-          <span>Desarrollador Web &bull; Líder de Emprendimiento &bull; Perú</span>
+          <span>Nuevo Chimbote, Áncash &bull; Estudiante de Ingeniería de Sistemas e Informática</span>
         </div>
         <div class="d-none d-md-block">
-          <span>Contacto: danielinfantes2003@gmail.com</span>
+          <span>chitorror@gmail.com</span>
         </div>
       </div>
     </div>
@@ -206,11 +210,13 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-8 text-center text-md-left">
-            <a class="brand-logo" href="#inicio">DANIEL INFANTES</a>
-            <div class="brand-subtitle">Portafolio Profesional &mdash; Desarrollo &amp; Liderazgo</div>
+            <a class="brand-logo" href="#inicio">Luis Daniel Laiza Infantes</a>
+            <div class="brand-subtitle">Ingeniería de Sistemas e Informática &mdash; Desarrollo Web, Móvil y Datos</div>
           </div>
           <div class="col-md-4 text-center text-md-right mt-2 mt-md-0">
-            <a href="#contacto" class="btn btn-outline-primary font-weight-bold btn-sm px-3 py-2">CONTACTARME</a>
+            <a href="https://wa.me/51938634821?text=Hola%20Daniel,%20visité%20tu%20portafolio%20web%20y%20me%20gustaría%20contactarte" target="_blank" class="btn btn-success font-weight-bold btn-sm px-3 py-2 shadow-sm">
+              💬 WhatsApp: 938 634 821
+            </a>
           </div>
         </div>
       </div>
@@ -225,154 +231,130 @@
         <div class="collapse navbar-collapse" id="navbarSecciones">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#logros">Logros &amp; Subvenciones</a></li>
-            <li class="nav-item"><a class="nav-link" href="#petpoint">PetPoint</a></li>
-            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos Web</a></li>
-            <li class="nav-item"><a class="nav-link" href="#cloud">Cloud &amp; DevOps</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos &amp; CRM</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certificaciones">Certificaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <main class="container" id="inicio">
-      <!-- Carga segura de módulos PHP o uso de fallback en caso de error -->
-      <?php 
-        $portada = ["titulo" => "Hola, soy Daniel Infantes", "resumen" => "Desarrollador enfocado en soluciones web, arquitectura Cloud Computing y emprendimiento con impacto social."];
-        if (file_exists("secciones/portada.php")) @include("secciones/portada.php");
-        if (file_exists("api/secciones/portada.php")) @include("api/secciones/portada.php");
-      ?>
+      <!-- Sección Presentación (Hero) -->
       <section class="hero-portada">
-        <span class="hero-kicker">Bienvenido a mi sitio web</span>
-        <h1><?php echo $portada["titulo"]; ?></h1>
-        <p class="lead"><?php echo $portada["resumen"]; ?></p>
+        <span class="hero-kicker">Perfil Profesional</span>
+        <h1>Hola, soy Luis Daniel Laiza Infantes</h1>
+        <p class="lead">Estudiante de Ingeniería de Sistemas e Informática con enfoque en desarrollo de software (web y móvil), análisis de datos y optimización de procesos organizacionales. Con experiencia en soluciones tecnológicas de alto impacto.</p>
       </section>
 
-      <!-- LOGROS: Subvención UNSA -->
-      <div class="section-divider" id="logros">Logros Académicos &amp; Pasantías</div>
-      <div class="row align-items-center mb-4">
-        <div class="col-md-7 mb-3 mb-md-0">
+      <!-- EXPERIENCIA PROFESIONAL -->
+      <div class="section-divider" id="experiencia">Experiencia Profesional</div>
+      <div class="row mb-4">
+        <div class="col-md-12">
           <article class="card info-card p-4">
-            <span class="section-tag">Reconocimiento &bull; UNSA</span>
-            <h3 class="card-title-custom">Ganador de Subvención para Pasantía Nacional</h3>
-            <div class="card-meta">Universidad Nacional de San Agustín (UNSA)</div>
-            <p class="card-text-custom">
-              Seleccionado por mérito académico para recibir la subvención de pasantía nacional otorgada por la UNSA, fortalecimiento de competencias en investigación, tecnología e intercambios académicos institucionales.
-            </p>
-          </article>
-        </div>
-        <div class="col-md-5 text-center">
-          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="UNSA Pasantía Nacional" class="img-fluid rounded shadow-sm" style="max-height: 220px; width: 100%; object-fit: cover;">
-        </div>
-      </div>
-
-      <!-- EMPRENDIMIENTO: PetPoint -->
-      <div class="section-divider" id="petpoint">Emprendimiento &mdash; PetPoint</div>
-      <div class="row align-items-center mb-4">
-        <div class="col-md-5 text-center mb-3 mb-md-0 order-2 order-md-1">
-          <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80" alt="PetPoint App Mascotas" class="img-fluid rounded shadow-sm" style="max-height: 220px; width: 100%; object-fit: cover;">
-        </div>
-        <div class="col-md-7 order-1 order-md-2">
-          <article class="card info-card p-4">
-            <span class="section-tag">Liderazgo &bull; Startup Móvil</span>
-            <h3 class="card-title-custom">Líder del Equipo de Emprendimiento PetPoint</h3>
-            <div class="card-meta">Aplicación Móvil para la Búsqueda de Mascotas Perdidas</div>
-            <p class="card-text-custom">
-              Lideré la gestión y desarrollo del equipo emprendedor detrás de **PetPoint**, una app diseñada para conectar comunidades y facilitar la localización oportuna de mascotas extraviadas mediante geolocalización y reportes en tiempo real.
-            </p>
+            <span class="section-tag">Universidad Nacional del Santa &bull; UDEMSI</span>
+            <h3 class="card-title-custom">Practicante Preprofesional de Desarrollo de Software</h3>
+            <div class="card-meta">Enero 2026 &ndash; Abril 2026</div>
+            <ul class="card-text-custom mb-0 pl-3">
+              <li>Análisis, diseño, desarrollo e implementación de una solución web para la gestión integral de procesos del Centro Preuniversitario (CEPUNS).</li>
+              <li>Participación activa en todo el ciclo de vida del software, desde el levantamiento de requerimientos técnicos hasta el despliegue del sistema web.</li>
+              <li>Modelado de bases de datos y estructuración de flujos de trabajo operativos para optimizar la gestión de información preuniversitaria.</li>
+            </ul>
           </article>
         </div>
       </div>
 
-      <!-- PROYECTOS WEB -->
-      <div class="section-divider" id="proyectos">Proyectos &amp; Desarrollo de Software</div>
-      <?php
-        $nacional = ["titulo" => "Desarrollo de Portales Web", "resumen" => "Creación de interfaces limpias y responsivas integradas con backend en PHP."];
-        $internacional = ["titulo" => "API REST & Backends", "resumen" => "Servicios backend estructurados y optimizados para despliegues ligeros."];
-        if (file_exists("secciones/nacional.php")) @include("secciones/nacional.php");
-        if (file_exists("secciones/internacional.php")) @include("secciones/internacional.php");
-      ?>
+      <!-- PROYECTOS Y SISTEMAS -->
+      <div class="section-divider" id="proyectos">Proyectos Técnicos &amp; Desarrollo</div>
       <div class="row">
         <div class="col-md-6 mb-4">
           <article class="card info-card">
             <div class="card-body d-flex flex-column">
-              <span class="section-tag">Desarrollo Frontend/Backend</span>
-              <h3 class="card-title-custom"><?php echo $nacional["titulo"]; ?></h3>
-              <div class="card-meta">PHP &bull; Bootstrap &bull; HTML5</div>
-              <p class="card-text-custom mb-0"><?php echo $nacional["resumen"]; ?></p>
+              <span class="section-tag">UI/UX &amp; Bases de Datos</span>
+              <h3 class="card-title-custom">Proyecto de Desarrollo / CRM de Gestión</h3>
+              <div class="card-meta">Setiembre 2025 &ndash; Diciembre 2025</div>
+              <p class="card-text-custom mb-2"><strong>Análisis y Diseño:</strong> Requerimientos e interfaces orientadas a la experiencia de usuario (UX/UI) utilizando Figma[cite: 10].</p>
+              <p class="card-text-custom mb-2"><strong>Base de Datos:</strong> Modelado y optimización mediante SQL para la gestión eficiente de la información[cite: 10].</p>
+              <p class="card-text-custom mb-0"><strong>Automatización:</strong> Implementación de lógica de negocio y automatización de procesos operativos[cite: 10].</p>
             </div>
           </article>
         </div>
         <div class="col-md-6 mb-4">
           <article class="card info-card">
             <div class="card-body d-flex flex-column">
-              <span class="section-tag">Arquitectura API</span>
-              <h3 class="card-title-custom"><?php echo $internacional["titulo"]; ?></h3>
-              <div class="card-meta">JSON &bull; Vercel &bull; PHP API</div>
-              <p class="card-text-custom mb-0"><?php echo $internacional["resumen"]; ?></p>
+              <span class="section-tag">Análisis &amp; Datos</span>
+              <h3 class="card-title-custom">Soluciones Tecnológicas &amp; Optimización</h3>
+              <div class="card-meta">Enfoque Analítico y Organizacional</div>
+              <p class="card-text-custom mb-2">Capacidad analítica aplicada a la resolución de problemas técnicos complejos, modelado de procesos organizacionales e implementación de herramientas eficientes alineadas a objetivos institucionales.</p>
+              <p class="card-text-custom mb-0">Enfoque riguroso en calidad de software, metodologías ágiles y adaptabilidad a entornos dinámicos de trabajo.</p>
             </div>
           </article>
         </div>
       </div>
 
-      <!-- CLOUD & DEVOPS -->
-      <div class="section-divider" id="cloud">Especialidad Cloud Computing</div>
-      <?php
-        $openstack = ["titulo" => "OpenStack & Infraestructura", "resumen" => "Despliegue y gestión de recursos en la nube en entornos virtuales."];
-        $git = ["titulo" => "Git & Control de Versiones", "resumen" => "Gestión de código fuente y flujos de trabajo colaborativos en GitHub."];
-        if (file_exists("secciones/openstack.php")) @include("secciones/openstack.php");
-        if (file_exists("secciones/git.php")) @include("secciones/git.php");
-      ?>
+      <!-- CERTIFICACIONES Y CAPACITACIONES -->
+      <div class="section-divider" id="certificaciones">Certificaciones &amp; Capacitaciones Oficiales</div>
       <div class="row">
-        <div class="col-md-6 mb-4">
-          <article class="card info-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Cloud & Virtualización</span>
-              <h3 class="card-title-custom"><?php echo $openstack["titulo"]; ?></h3>
-              <div class="card-meta">OpenStack &bull; Cloud Infrastructure</div>
-              <p class="card-text-custom mb-0"><?php echo $openstack["resumen"]; ?></p>
+        <div class="col-md-4 mb-4">
+          <article class="card info-card h-100">
+            <div class="card-body">
+              <span class="section-tag">Universidad Nacional de Ingeniería (UNI)</span>
+              <h5 class="card-title-custom" style="font-size: 1rem;">ERP Odoo - Funcional y Técnico</h5>
+              <p class="card-meta">Nota final: 19 (Oti-UNI)</p>
+              <p class="card-text-custom mb-0" style="font-size: 0.88rem;">Gestión funcional, creación de bases de datos, módulos de ventas, compras, inventario y desarrollo de entornos locales[cite: 14, 15].</p>
             </div>
           </article>
         </div>
-        <div class="col-md-6 mb-4">
-          <article class="card info-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">DevOps & Control de Código</span>
-              <h3 class="card-title-custom"><?php echo $git["titulo"]; ?></h3>
-              <div class="card-meta">Git &bull; GitHub &bull; Workflows</div>
-              <p class="card-text-custom mb-0"><?php echo $git["resumen"]; ?></p>
+        <div class="col-md-4 mb-4">
+          <article class="card info-card h-100">
+            <div class="card-body">
+              <span class="section-tag">UNI &bull; OTI</span>
+              <h5 class="card-title-custom" style="font-size: 1rem;">Power BI Básico e Intermedio</h5>
+              <p class="card-meta">Notas: 20 y 20 (UNI)</p>
+              <p class="card-text-custom mb-0" style="font-size: 0.88rem;">Visualización de datos, transformación avanzada con Power Query, modelado dimensional (Estrella/Copo de nieve) y medidas DAX[cite: 20, 21, 22, 23].</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 mb-4">
+          <article class="card info-card h-100">
+            <div class="card-body">
+              <span class="section-tag">UNI &bull; OTI</span>
+              <h5 class="card-title-custom" style="font-size: 1rem;">Machine Learning con Python</h5>
+              <p class="card-meta">Nota final: 16 (UNI)</p>
+              <p class="card-text-custom mb-0" style="font-size: 0.88rem;">Algoritmos supervisados y no supervisados, NumPy, Pandas, Matplotlib, regresión lineal, logística y árboles de decisión[cite: 18, 19].</p>
             </div>
           </article>
         </div>
       </div>
-    </main>
 
-    <!-- Pie de página -->
-    <footer class="site-footer" id="contacto">
-      <div class="container text-center">
-        <p class="mb-1"><strong>DANIEL INFANTES</strong> &mdash; Portafolio Profesional</p>
-        <p class="mb-2">Contacto: danielinfantes2003@gmail.com &bull; Perú</p>
-        <p class="mb-0"><a href="#inicio" class="text-white">Volver arriba &uarr;</a></p>
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Script para evitar recarga brusca en el menú -->
-    <script>
-      $(document).ready(function(){
-        $('.nav-link, .brand-logo').on('click', function(event) {
-          if (this.hash !== "") {
-            var hash = this.hash;
-            if($(hash).length) {
-              event.preventDefault();
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top - 70
-              }, 500);
-            }
-          }
-        });
-      });
-    </script>
-  </body>
-</html>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <article class="card info-card h-100">
+            <div class="card-body">
+              <span class="section-tag">UNI &bull; OTI</span>
+              <h5 class="card-title-custom" style="font-size: 1rem;">Fundamentos de Diseño UX/UI con Figma</h5>
+              <p class="card-meta">Nota final: 20 (UNI)</p>
+              <p class="card-text-custom mb-0" style="font-size: 0.88rem;">Diseño web y móvil responsivo, componentes, Auto Layout, jerarquía visual y prototipado interactivo avanzado[cite: 16, 17].</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 mb-4">
+          <article class="card info-card h-100">
+            <div class="card-body">
+              <span class="section-tag">SCRUMstudy</span>
+              <h5 class="card-title-custom" style="font-size: 1rem;">Scrum Fundamentals Certified (SFC)</h5>
+              <p class="card-meta">Emitido: Diciembre 2025</p>
+              <p class="card-text-custom mb-0" style="font-size: 0.88rem;">Certificación oficial en principios, prácticas y gestión ágil de proyectos bajo el marco de trabajo Scrum[cite: 25].</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 mb-4">
+          <article class="card info-card h-100">
+            <div class="card-body">
+              <span class="section-tag">Cisco Networking Academy</span>
+              <h5 class="card-title-custom" style="font-size: 1rem;">Conceptos y Fundamentos de Redes</h5>
+              <p class="card-meta">Emitido: Agosto 2025</p>
+              <p class="card-text-custom mb-0" style="font-size: 0.88rem;">Fundamentos teóricos y prácticos de arquitectura de redes, conectividad y protocolos de comunicación[cite: 24].</p>
+            </div>
+          </
