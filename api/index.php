@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Página Personal y Portafolio Profesional">
+    <meta name="description" content="Página Personal, Portafolio y Logros de Daniel Infantes">
     <meta name="author" content="Daniel Infantes">
 
-    <title>Daniel Infantes | Portafolio Profesional</title>
+    <title>Daniel Infantes | Portafolio y Logros Profesionales</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -186,7 +186,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <div>
           <span class="status-badge mr-2">DISPONIBLE</span>
-          <span>Desarrollador Web &amp; Especialista Cloud &bull; Perú</span>
+          <span>Desarrollador Web &bull; Líder de Proyectos &bull; Perú</span>
         </div>
         <div class="d-none d-md-block">
           <span>Contacto: danielinfantes2003@ejemplo.com</span>
@@ -200,7 +200,7 @@
         <div class="row align-items-center">
           <div class="col-md-8 text-center text-md-left">
             <a class="brand-logo" href="#">DANIEL INFANTES</a>
-            <div class="brand-subtitle">Portafolio Profesional &mdash; Desarrollo &amp; Cloud</div>
+            <div class="brand-subtitle">Portafolio Profesional &mdash; Innovación y Desarrollo</div>
           </div>
           <div class="col-md-4 text-center text-md-right mt-2 mt-md-0">
             <a href="#contacto" class="btn btn-outline-primary font-weight-bold btn-sm px-3 py-2">MI CONTACTO</a>
@@ -218,9 +218,9 @@
         <div class="collapse navbar-collapse" id="navbarSecciones">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
-            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#logros">Logros y Becas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#emprendimiento">PetPoint</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos Web</a></li>
             <li class="nav-item"><a class="nav-link" href="#cloud">Cloud &amp; DevOps</a></li>
           </ul>
         </div>
@@ -230,7 +230,6 @@
     <main class="container" id="inicio">
       <!-- Sección Presentación (Hero) -->
       <?php 
-        // Carga de la información de portada desde tu carpeta api/
         if (file_exists("api/portada.php")) {
             include("api/portada.php");
         } else if (file_exists("portada.php")) {
@@ -240,13 +239,50 @@
       <section class="hero-portada">
         <span class="hero-kicker">Bienvenido a mi sitio web</span>
         <h1><?php echo isset($portada["titulo"]) ? $portada["titulo"] : "Hola, soy Daniel Infantes"; ?></h1>
-        <p class="lead"><?php echo isset($portada["resumen"]) ? $portada["resumen"] : "Desarrollador enfocado en soluciones web, APIs en PHP y arquitectura Cloud Computing."; ?></p>
+        <p class="lead"><?php echo isset($portada["resumen"]) ? $portada["resumen"] : "Desarrollador web, líder de equipos tecnológicos y apasionado por la innovación y el impacto social."; ?></p>
       </section>
 
+      <!-- SECCIÓN: Logros y Reconocimientos (UNSA) -->
+      <div class="section-divider" id="logros">Logros y Reconocimientos Académicos</div>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+          <article class="card info-card p-4">
+            <span class="section-tag">Beca / Subvención</span>
+            <h3 class="card-title-custom">Subvención de la UNSA para Pasantía Nacional</h3>
+            <div class="card-meta">Universidad Nacional de San Agustín (UNSA) &bull; Mérito Académico</div>
+            <p class="card-text-custom">
+              Seleccionado y ganador de subvención para pasantía nacional, destacando por excelencia académica y compromiso con la investigación y el desarrollo tecnológico en el país.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6 text-center mt-3 mt-md-0">
+          <!-- Aquí puedes mostrar tu foto en la UNSA -->
+          <img src="ruta-a-tu-foto-unsa.jpg" alt="Daniel Infantes en la UNSA" class="img-fluid rounded shadow-sm" style="max-height: 280px; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- SECCIÓN: Emprendimiento y Liderazgo (PetPoint) -->
+      <div class="section-divider" id="emprendimiento">Emprendimiento y Liderazgo &mdash; PetPoint</div>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6 order-md-2">
+          <article class="card info-card p-4">
+            <span class="section-tag">Liderazgo de Equipo &bull; Startup</span>
+            <h3 class="card-title-custom">PetPoint: Aplicación Móvil de Geolocalización para Mascotas</h3>
+            <div class="card-meta">Fundador y Líder de Proyecto &bull; Impacto Social</div>
+            <p class="card-text-custom">
+              Lideré el equipo multidisciplinario detrás de **PetPoint**, una aplicación móvil orientada a solucionar un problema social clave: ayudar a las familias a encontrar mascotas perdidas mediante el uso de tecnología y reportes comunitarios en tiempo real.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6 order-md-1 text-center mt-3 mt-md-0">
+          <!-- Aquí puedes mostrar tu foto con el equipo de PetPoint -->
+          <img src="ruta-a-tu-foto-equipo.jpg" alt="Equipo PetPoint" class="img-fluid rounded shadow-sm" style="max-height: 280px; object-fit: cover;">
+        </div>
+      </div>
+
       <!-- Sección Proyectos Principales -->
-      <div class="section-divider" id="proyectos">Proyectos Destacados</div>
+      <div class="section-divider" id="proyectos">Proyectos y Desarrollos Web</div>
       <?php
-        // Carga de archivos PHP de proyectos/secciones
         if (file_exists("api/nacional.php")) include("api/nacional.php");
         if (file_exists("api/internacional.php")) include("api/internacional.php");
       ?>
@@ -254,27 +290,27 @@
         <div class="col-md-6 mb-4">
           <article class="card info-card">
             <div class="card-body d-flex flex-column">
-              <span class="section-tag">Proyecto Web</span>
-              <h3 class="card-title-custom"><a href="#"><?php echo isset($nacional["titulo"]) ? $nacional["titulo"] : "Sistema de Gestión Web"; ?></a></h3>
-              <div class="news-meta">PHP &bull; Bootstrap &bull; MySQL</div>
-              <p class="card-text-custom mb-0"><?php echo isset($nacional["resumen"]) ? $nacional["resumen"] : "Aplicación desarrollada para la gestión centralizada de datos y reportes."; ?></p>
+              <span class="section-tag">Sistema Web</span>
+              <h3 class="card-title-custom"><a href="#"><?php echo isset($nacional["titulo"]) ? $nacional["titulo"] : "Plataforma de Gestión y Noticias"; ?></a></h3>
+              <div class="news-meta">PHP &bull; Bootstrap &bull; Arquitectura Modular</div>
+              <p class="card-text-custom mb-0"><?php echo isset($nacional["resumen"]) ? $nacional["resumen"] : "Desarrollo de portales web dinámicos optimizados para la carga eficiente de contenidos y reportes en tiempo real."; ?></p>
             </div>
           </article>
         </div>
         <div class="col-md-6 mb-4">
           <article class="card info-card">
             <div class="card-body d-flex flex-column">
-              <span class="section-tag">API REST</span>
-              <h3 class="card-title-custom"><a href="#"><?php echo isset($internacional["titulo"]) ? $internacional["titulo"] : "Servicios Backend API"; ?></a></h3>
-              <div class="news-meta">PHP &bull; JSON &bull; Vercel Deployment</div>
-              <p class="card-text-custom mb-0"><?php echo isset($internacional["resumen"]) ? $internacional["resumen"] : "Infraestructura de endpoints optimizados para consumo web y móvil."; ?></p>
+              <span class="section-tag">API Backend</span>
+              <h3 class="card-title-custom"><a href="#"><?php echo isset($internacional["titulo"]) ? $internacional["titulo"] : "Servicios REST &amp; Cloud"; ?></a></h3>
+              <div class="news-meta">PHP &bull; Vercel &bull; Integración JSON</div>
+              <p class="card-text-custom mb-0"><?php echo isset($internacional["resumen"]) ? $internacional["resumen"] : "Infraestructura de microservicios y despliegues optimizados en entornos en la nube."; ?></p>
             </div>
           </article>
         </div>
       </div>
 
-      <!-- Sección Especialización Cloud -->
-      <div class="section-divider" id="cloud">Tecnología &amp; Cloud DevOps</div>
+      <!-- Sección Cloud & DevOps -->
+      <div class="section-divider" id="cloud">Cloud Computing &amp; DevOps</div>
       <?php
         if (file_exists("api/openstack.php")) include("api/openstack.php");
         if (file_exists("api/contenedores.php")) include("api/contenedores.php");
@@ -284,9 +320,9 @@
           <article class="card info-card">
             <div class="card-body d-flex flex-column">
               <span class="section-tag">Cloud Infrastructure</span>
-              <h3 class="card-title-custom"><a href="#"><?php echo isset($openstack["titulo"]) ? $openstack["titulo"] : "Despliegues en OpenStack / AWS"; ?></a></h3>
-              <div class="card-meta">Infraestructura como Código</div>
-              <p class="card-text-custom mb-0"><?php echo isset($openstack["resumen"]) ? $openstack["resumen"] : "Experiencia en configuración y mantenimiento de servidores virtuales."; ?></p>
+              <h3 class="card-title-custom"><a href="#"><?php echo isset($openstack["titulo"]) ? $openstack["titulo"] : "OpenStack &amp; Virtualización"; ?></a></h3>
+              <div class="card-meta">Infraestructura y Redes</div>
+              <p class="card-text-custom mb-0"><?php echo isset($openstack["resumen"]) ? $openstack["resumen"] : "Administración y despliegue de entornos virtuales escalables."; ?></p>
             </div>
           </article>
         </div>
@@ -294,9 +330,9 @@
           <article class="card info-card">
             <div class="card-body d-flex flex-column">
               <span class="section-tag">Contenedores</span>
-              <h3 class="card-title-custom"><a href="#"><?php echo isset($contenedores["titulo"]) ? $contenedores["titulo"] : "Docker &amp; Kubernetes"; ?></a></h3>
-              <div class="card-meta">Orquestación y CI/CD</div>
-              <p class="card-text-custom mb-0"><?php echo isset($contenedores["resumen"]) ? $contenedores["resumen"] : "Empaquetado de aplicaciones para despliegues ágiles e independientes."; ?></p>
+              <h3 class="card-title-custom"><a href="#"><?php echo isset($contenedores["titulo"]) ? $contenedores["titulo"] : "Docker &amp; Orquestación"; ?></a></h3>
+              <div class="card-meta">CI/CD y Despliegues Ágiles</div>
+              <p class="card-text-custom mb-0"><?php echo isset($contenedores["resumen"]) ? $contenedores["resumen"] : "Empaquetado de aplicaciones garantizando consistencia en producción."; ?></p>
             </div>
           </article>
         </div>
@@ -307,7 +343,7 @@
     <footer class="site-footer" id="contacto">
       <div class="container text-center">
         <p class="mb-1"><strong>DANIEL INFANTES</strong> &mdash; Portafolio Personal 2026</p>
-        <p class="mb-2">Desarrollo Web &bull; APIs &bull; Cloud Infrastructure</p>
+        <p class="mb-2">Desarrollo Web &bull; Liderazgo Tecnológico &bull; Cloud Infrastructure</p>
         <p class="mb-0"><a href="#" class="text-white">Volver arriba &uarr;</a></p>
       </div>
     </footer>
