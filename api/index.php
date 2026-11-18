@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="NOTICIAS AL DÍA - El Noticioso 2026. Siempre Listos, Siempre Actualizados.">
-    <meta name="author" content="Noticias al Día">
+    <meta name="description" content="Página Personal y Portafolio Profesional">
+    <meta name="author" content="Daniel Infantes">
 
-    <title>NOTICIAS AL DÍA | El Noticioso 2026</title>
+    <title>Daniel Infantes | Portafolio Profesional</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,26 +15,25 @@
 
     <style>
       :root {
-        --rpp-red: #d90416;
-        --rpp-dark-red: #a8000e;
-        --rpp-dark: #18191a;
-        --rpp-gray-bg: #f4f5f7;
-        --rpp-border: #e2e5e9;
+        --brand-blue: #0d6efd;
+        --brand-dark-blue: #0a58ca;
+        --brand-dark: #18191a;
+        --brand-gray-bg: #f4f5f7;
+        --brand-border: #e2e5e9;
       }
       body {
         font-family: 'Roboto', sans-serif;
-        background-color: var(--rpp-gray-bg);
+        background-color: var(--brand-gray-bg);
         color: #1c1e21;
       }
-      /* Topbar institucional */
       .top-utility-bar {
-        background-color: var(--rpp-dark);
+        background-color: var(--brand-dark);
         color: #fff;
         font-size: 0.8rem;
         padding: 6px 0;
       }
-      .live-badge {
-        background-color: var(--rpp-red);
+      .status-badge {
+        background-color: #28a745;
         color: #fff;
         font-weight: 700;
         padding: 2px 8px;
@@ -42,43 +41,35 @@
         font-size: 0.72rem;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        animation: pulse 2s infinite;
       }
-      @keyframes pulse {
-        0% { opacity: 1; }
-        50% { opacity: 0.65; }
-        100% { opacity: 1; }
-      }
-      /* Cabecera principal estilo RPP */
       .main-header {
         background-color: #ffffff;
-        border-bottom: 3px solid var(--rpp-red);
+        border-bottom: 3px solid var(--brand-blue);
         padding: 16px 0;
       }
       .brand-logo {
         font-family: 'Roboto', sans-serif;
         font-weight: 900;
-        font-size: 2.3rem;
-        color: var(--rpp-red) !important;
+        font-size: 2.1rem;
+        color: var(--brand-blue) !important;
         letter-spacing: -1px;
         text-decoration: none !important;
         text-transform: uppercase;
         line-height: 1;
       }
       .brand-subtitle {
-        font-size: 0.82rem;
+        font-size: 0.85rem;
         font-weight: 700;
         color: #4b5563;
         text-transform: uppercase;
         letter-spacing: 1px;
         margin-top: 4px;
       }
-      /* Barra de navegación */
-      .nav-rpp {
-        background-color: var(--rpp-red);
+      .nav-custom {
+        background-color: var(--brand-blue);
         box-shadow: 0 2px 6px rgba(0,0,0,0.12);
       }
-      .nav-rpp .nav-link {
+      .nav-custom .nav-link {
         color: #ffffff !important;
         font-weight: 700;
         font-size: 0.85rem;
@@ -86,23 +77,22 @@
         padding: 10px 14px;
         transition: background 0.2s;
       }
-      .nav-rpp .nav-link:hover {
-        background-color: var(--rpp-dark-red);
+      .nav-custom .nav-link:hover {
+        background-color: var(--brand-dark-blue);
       }
-      /* Portada Hero */
       .hero-portada {
         background: linear-gradient(135deg, #18191a 0%, #2c2f33 100%);
-        border-left: 6px solid var(--rpp-red);
+        border-left: 6px solid var(--brand-blue);
         color: #ffffff;
         border-radius: 6px;
-        padding: 2rem;
+        padding: 2.5rem 2rem;
         margin-top: 1.25rem;
         margin-bottom: 1.5rem;
         box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       }
       .hero-kicker {
         display: inline-block;
-        background-color: var(--rpp-red);
+        background-color: var(--brand-blue);
         color: #fff;
         font-weight: 700;
         font-size: 0.75rem;
@@ -124,21 +114,20 @@
         font-weight: 400;
         margin-bottom: 0;
       }
-      /* Tarjetas de noticias estilo portal periodístico */
-      .news-card {
+      .info-card {
         background-color: #ffffff;
-        border: 1px solid var(--rpp-border);
-        border-top: 3px solid var(--rpp-red);
+        border: 1px solid var(--brand-border);
+        border-top: 3px solid var(--brand-blue);
         border-radius: 4px;
         height: 100%;
         transition: transform 0.15s ease, box-shadow 0.15s ease;
       }
-      .news-card:hover {
+      .info-card:hover {
         transform: translateY(-2px);
         box-shadow: 0 6px 16px rgba(0,0,0,0.08);
       }
       .section-tag {
-        color: var(--rpp-red);
+        color: var(--brand-blue);
         font-weight: 800;
         font-size: 0.75rem;
         text-transform: uppercase;
@@ -146,33 +135,33 @@
         margin-bottom: 6px;
         display: block;
       }
-      .news-title {
+      .card-title-custom {
         font-family: 'Merriweather', serif;
         font-weight: 700;
         font-size: 1.12rem;
         line-height: 1.35;
         margin-bottom: 8px;
       }
-      .news-title a {
+      .card-title-custom a {
         color: #111827;
         text-decoration: none;
       }
-      .news-title a:hover {
-        color: var(--rpp-red);
+      .card-title-custom a:hover {
+        color: var(--brand-blue);
       }
-      .news-meta {
+      .card-meta {
         font-size: 0.78rem;
         color: #6b7280;
         font-weight: 500;
         margin-bottom: 10px;
       }
-      .news-summary {
+      .card-text-custom {
         font-size: 0.92rem;
         color: #374151;
         line-height: 1.5;
       }
       .section-divider {
-        border-left: 4px solid var(--rpp-red);
+        border-left: 4px solid var(--brand-blue);
         padding-left: 10px;
         font-weight: 900;
         font-size: 1.1rem;
@@ -181,29 +170,26 @@
         margin: 1.5rem 0 1rem 0;
       }
       .site-footer {
-        background-color: var(--rpp-dark);
+        background-color: var(--brand-dark);
         color: #9ca3af;
         padding: 2rem 0;
         margin-top: 3rem;
-        border-top: 4px solid var(--rpp-red);
+        border-top: 4px solid var(--brand-blue);
         font-size: 0.88rem;
-      }
-      .site-footer strong {
-        color: #ffffff;
       }
     </style>
   </head>
 
   <body>
-    <!-- Barra superior de actualidad -->
+    <!-- Barra superior -->
     <div class="top-utility-bar">
       <div class="container d-flex justify-content-between align-items-center">
         <div>
-          <span class="live-badge mr-2">EN VIVO</span>
-          <span>Edición Digital &bull; Lunes, 16 de Noviembre de 2026 &bull; Perú</span>
+          <span class="status-badge mr-2">DISPONIBLE</span>
+          <span>Desarrollador Web &amp; Especialista Cloud &bull; Perú</span>
         </div>
         <div class="d-none d-md-block">
-          <span>Siempre Listos, Siempre Actualizados</span>
+          <span>Contacto: danielinfantes2003@ejemplo.com</span>
         </div>
       </div>
     </div>
@@ -213,304 +199,115 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-8 text-center text-md-left">
-            <a class="brand-logo" href="#">NOTICIAS AL DÍA</a>
-            <div class="brand-subtitle">El Noticioso 2026 &mdash; Información al instante</div>
+            <a class="brand-logo" href="#">DANIEL INFANTES</a>
+            <div class="brand-subtitle">Portafolio Profesional &mdash; Desarrollo &amp; Cloud</div>
           </div>
           <div class="col-md-4 text-center text-md-right mt-2 mt-md-0">
-            <span class="badge badge-danger px-3 py-2">ÚLTIMO MINUTO</span>
+            <a href="#contacto" class="btn btn-outline-primary font-weight-bold btn-sm px-3 py-2">MI CONTACTO</a>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Menú de Secciones -->
-    <nav class="navbar navbar-expand-lg nav-rpp p-0">
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg nav-custom p-0">
       <div class="container">
         <button class="navbar-toggler text-white py-2" type="button" data-toggle="collapse" data-target="#navbarSecciones">
-          &#9776; Secciones
+          &#9776; Menú
         </button>
         <div class="collapse navbar-collapse" id="navbarSecciones">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="#portada">Portada</a></li>
-            <li class="nav-item"><a class="nav-link" href="#nacional">Nacional</a></li>
-            <li class="nav-item"><a class="nav-link" href="#internacional">Internacional</a></li>
-            <li class="nav-item"><a class="nav-link" href="#economia">Economía</a></li>
-            <li class="nav-item"><a class="nav-link" href="#deportes">Deportes</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnología</a></li>
-            <li class="nav-item"><a class="nav-link" href="#ciencia">Ciencia</a></li>
-            <li class="nav-item"><a class="nav-link" href="#opinion">Opinión</a></li>
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
             <li class="nav-item"><a class="nav-link" href="#cloud">Cloud &amp; DevOps</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <main class="container" id="portada">
-      <?php include("secciones/portada.php"); ?>
+    <main class="container" id="inicio">
+      <!-- Sección Presentación (Hero) -->
+      <?php 
+        // Carga de la información de portada desde tu carpeta api/
+        if (file_exists("api/portada.php")) {
+            include("api/portada.php");
+        } else if (file_exists("portada.php")) {
+            include("portada.php");
+        }
+      ?>
       <section class="hero-portada">
-        <span class="hero-kicker">Edición Central 2026</span>
-        <h1><?php echo $portada["titulo"]; ?></h1>
-        <p class="lead"><?php echo $portada["resumen"]; ?></p>
+        <span class="hero-kicker">Bienvenido a mi sitio web</span>
+        <h1><?php echo isset($portada["titulo"]) ? $portada["titulo"] : "Hola, soy Daniel Infantes"; ?></h1>
+        <p class="lead"><?php echo isset($portada["resumen"]) ? $portada["resumen"] : "Desarrollador enfocado en soluciones web, APIs en PHP y arquitectura Cloud Computing."; ?></p>
       </section>
 
-      <div class="section-divider" id="nacional">Actualidad Nacional e Internacional</div>
-      <!-- Fila 1 -->
+      <!-- Sección Proyectos Principales -->
+      <div class="section-divider" id="proyectos">Proyectos Destacados</div>
       <?php
-        include("secciones/internacional.php");
-        include("secciones/nacional.php");
+        // Carga de archivos PHP de proyectos/secciones
+        if (file_exists("api/nacional.php")) include("api/nacional.php");
+        if (file_exists("api/internacional.php")) include("api/internacional.php");
       ?>
       <div class="row">
-        <div class="col-md-6 mb-4" id="internacional">
-          <article class="card news-card">
+        <div class="col-md-6 mb-4">
+          <article class="card info-card">
             <div class="card-body d-flex flex-column">
-              <span class="section-tag">Internacional</span>
-              <h3 class="news-title"><a href="#"><?php echo $internacional["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $internacional["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $internacional["resumen"]; ?></p>
+              <span class="section-tag">Proyecto Web</span>
+              <h3 class="card-title-custom"><a href="#"><?php echo isset($nacional["titulo"]) ? $nacional["titulo"] : "Sistema de Gestión Web"; ?></a></h3>
+              <div class="news-meta">PHP &bull; Bootstrap &bull; MySQL</div>
+              <p class="card-text-custom mb-0"><?php echo isset($nacional["resumen"]) ? $nacional["resumen"] : "Aplicación desarrollada para la gestión centralizada de datos y reportes."; ?></p>
             </div>
           </article>
         </div>
         <div class="col-md-6 mb-4">
-          <article class="card news-card">
+          <article class="card info-card">
             <div class="card-body d-flex flex-column">
-              <span class="section-tag">Nacional</span>
-              <h3 class="news-title"><a href="#"><?php echo $nacional["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $nacional["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $nacional["resumen"]; ?></p>
+              <span class="section-tag">API REST</span>
+              <h3 class="card-title-custom"><a href="#"><?php echo isset($internacional["titulo"]) ? $internacional["titulo"] : "Servicios Backend API"; ?></a></h3>
+              <div class="news-meta">PHP &bull; JSON &bull; Vercel Deployment</div>
+              <p class="card-text-custom mb-0"><?php echo isset($internacional["resumen"]) ? $internacional["resumen"] : "Infraestructura de endpoints optimizados para consumo web y móvil."; ?></p>
             </div>
           </article>
         </div>
       </div>
 
-      <div class="section-divider" id="economia">Economía y Opinión</div>
-      <!-- Fila 2 -->
+      <!-- Sección Especialización Cloud -->
+      <div class="section-divider" id="cloud">Tecnología &amp; Cloud DevOps</div>
       <?php
-        include("secciones/economia.php");
-        include("secciones/opinion.php");
+        if (file_exists("api/openstack.php")) include("api/openstack.php");
+        if (file_exists("api/contenedores.php")) include("api/contenedores.php");
       ?>
       <div class="row">
         <div class="col-md-6 mb-4">
-          <article class="card news-card">
+          <article class="card info-card">
             <div class="card-body d-flex flex-column">
-              <span class="section-tag">Economía</span>
-              <h3 class="news-title"><a href="#"><?php echo $economia["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $economia["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $economia["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-6 mb-4" id="opinion">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Opinión</span>
-              <h3 class="news-title"><a href="#"><?php echo $opinion["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $opinion["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $opinion["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="section-divider" id="tecnologia">Tecnología y Ciencia</div>
-      <!-- Fila 3 -->
-      <?php
-        include("secciones/tecnologia.php");
-        include("secciones/ciencia.php");
-      ?>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Tecnología</span>
-              <h3 class="news-title"><a href="#"><?php echo $tecnologia["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $tecnologia["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $tecnologia["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-6 mb-4" id="ciencia">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Ciencia</span>
-              <h3 class="news-title"><a href="#"><?php echo $ciencia["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $ciencia["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $ciencia["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="section-divider">Cultura y Actualidad</div>
-      <!-- Fila 4 -->
-      <?php
-        include("secciones/cultura.php");
-        include("secciones/gente.php");
-      ?>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Cultura</span>
-              <h3 class="news-title"><a href="#"><?php echo $cultura["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $cultura["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $cultura["resumen"]; ?></p>
+              <span class="section-tag">Cloud Infrastructure</span>
+              <h3 class="card-title-custom"><a href="#"><?php echo isset($openstack["titulo"]) ? $openstack["titulo"] : "Despliegues en OpenStack / AWS"; ?></a></h3>
+              <div class="card-meta">Infraestructura como Código</div>
+              <p class="card-text-custom mb-0"><?php echo isset($openstack["resumen"]) ? $openstack["resumen"] : "Experiencia en configuración y mantenimiento de servidores virtuales."; ?></p>
             </div>
           </article>
         </div>
         <div class="col-md-6 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Gente</span>
-              <h3 class="news-title"><a href="#"><?php echo $gente["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $gente["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $gente["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="section-divider" id="deportes">Deportes y Multimedia</div>
-      <!-- Fila 5 -->
-      <?php
-        include("secciones/deportes.php");
-        include("secciones/television.php");
-        include("secciones/video.php");
-      ?>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Deportes</span>
-              <h3 class="news-title"><a href="#"><?php echo $deportes["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $deportes["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $deportes["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Televisión</span>
-              <h3 class="news-title"><a href="#"><?php echo $television["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $television["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $television["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Video</span>
-              <h3 class="news-title"><a href="#"><?php echo $video["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $video["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $video["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="section-divider">Educación, Empleo y Sociedad</div>
-      <!-- Fila 6 -->
-      <?php
-        include("secciones/formacion.php");
-        include("secciones/empleo.php");
-        include("secciones/sociedad.php");
-      ?>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Formación</span>
-              <h3 class="news-title"><a href="#"><?php echo $formacion["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $formacion["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $formacion["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Empleo</span>
-              <h3 class="news-title"><a href="#"><?php echo $empleo["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $empleo["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $empleo["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Sociedad</span>
-              <h3 class="news-title"><a href="#"><?php echo $sociedad["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $sociedad["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $sociedad["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="section-divider" id="cloud">Especial Cloud Computing y DevOps</div>
-      <!-- Fila 7 -->
-      <?php
-        include("secciones/openstack.php");
-        include("secciones/git.php");
-      ?>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">OpenStack</span>
-              <h3 class="news-title"><a href="#"><?php echo $openstack["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $openstack["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $openstack["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-6 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">Git</span>
-              <h3 class="news-title"><a href="#"><?php echo $git["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $git["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $git["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <!-- Fila 8 -->
-      <?php
-        include("secciones/contenedores.php");
-        include("secciones/openshift.php");
-      ?>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <article class="card news-card">
+          <article class="card info-card">
             <div class="card-body d-flex flex-column">
               <span class="section-tag">Contenedores</span>
-              <h3 class="news-title"><a href="#"><?php echo $contenedores["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $contenedores["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $contenedores["resumen"]; ?></p>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-6 mb-4">
-          <article class="card news-card">
-            <div class="card-body d-flex flex-column">
-              <span class="section-tag">OpenShift</span>
-              <h3 class="news-title"><a href="#"><?php echo $openshift["titulo"]; ?></a></h3>
-              <div class="news-meta">Por <?php echo $openshift["autor"]; ?> &bull; Hoy</div>
-              <p class="news-summary mb-0"><?php echo $openshift["resumen"]; ?></p>
+              <h3 class="card-title-custom"><a href="#"><?php echo isset($contenedores["titulo"]) ? $contenedores["titulo"] : "Docker &amp; Kubernetes"; ?></a></h3>
+              <div class="card-meta">Orquestación y CI/CD</div>
+              <p class="card-text-custom mb-0"><?php echo isset($contenedores["resumen"]) ? $contenedores["resumen"] : "Empaquetado de aplicaciones para despliegues ágiles e independientes."; ?></p>
             </div>
           </article>
         </div>
       </div>
     </main>
 
-    <footer class="site-footer">
+    <!-- Pie de página -->
+    <footer class="site-footer" id="contacto">
       <div class="container text-center">
-        <p class="mb-1"><strong>NOTICIAS AL DÍA</strong> &mdash; El Noticioso 2026</p>
-        <p class="mb-2">Siempre Listos, Siempre Actualizados</p>
+        <p class="mb-1"><strong>DANIEL INFANTES</strong> &mdash; Portafolio Personal 2026</p>
+        <p class="mb-2">Desarrollo Web &bull; APIs &bull; Cloud Infrastructure</p>
         <p class="mb-0"><a href="#" class="text-white">Volver arriba &uarr;</a></p>
       </div>
     </footer>
